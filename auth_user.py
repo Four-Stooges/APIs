@@ -6,14 +6,14 @@ client = MongoClient()
 
 usr = sys.argv[1]
 pwd = sys.argv[2]
-db = client.h_db
+db = client.user_db
 #print(usr)
 #print(pwd)
 user = db.user
 
 try:
-    for ele in list(user.find({"name" : usr})): 
-        if ele['pwd'] == pwd:
+    for ele in list(user.find({"u_name" : usr})): 
+        if ele['u_pwd'] == pwd:
             exit(0)
 
 except:
