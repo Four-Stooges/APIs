@@ -15,7 +15,6 @@ try:
     for ele in list(user.find({"u_name" : usr})): 
         if ele['u_pwd'] == pwd:
             exit(0)
-
-except:
+except Exception:
     exit(2)
 exit(1)
