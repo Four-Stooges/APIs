@@ -28,7 +28,7 @@ for jamaal in pid.find():
 	jamal_id=jamaal['person_id']
 	
 	with open("ngodata.txt", "a") as myfile:
-	    myfile.write(str(x) + "\t" + str(jamal_id) +"\n")
+	    myfile.write(x + "\t" + str(jamal_id) +"\n")
 
 
 	

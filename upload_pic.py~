@@ -9,8 +9,7 @@ img_id=sys.argv[1]
 lat=sys.argv[2]
 lng=sys.argv[3]
 for ele in user.find():
-	#res=cmp_img_id.py
-	res=0
+	res=cmp_img_id.py
 	if res==0:
 		user.update_one(filter=None,{'$set':{"lat":lat,"long":lng}}
 		                {'$inc':{"count": 1}})
